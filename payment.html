@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Payment Option</title>
+        <link rel="stylesheet" href="payment.css">
+    </head>
+    <body>
+        <header class="header1">
+            <h1 class="payOption">Payment Option</h1>
+            <p class="pleaseOption">Please select your payment option to continue.</p>
+        </header>
+        <section class="section1">
+            <div class="divCash">
+                <h3 class="payCash">Cash</h3>
+                <h4 class="name1">Your first and last name:</h4>
+                <div class='cashSection'>
+                    <input class="firstName1" type="text" name="name" placeholder="First name*"><br><br>
+                    <input class="lastName1" type="text" name="name" placeholder="Last name*">
+                </div>
+                <h4 class="gender">Gender:</h4>
+                <from class="form1">
+                    <input class="male1" type="radio" id="male" name="name" value="Male">
+                    <label for="male">Male</label><br>
+                    <input class="female1" type="radio" id="female" name="name" value="Female">
+                    <label for="female">Female</label><br>
+                    <button class="button1" onclick="myFunction1()">Send It</button>
+                    <p class="java1" id="play"></p>
+                </from>
+            </div>
+            <div class="divCard">
+                <h3 class="payCard">Credit/Debit Card</h3>
+                <img class="visaImg" src="imgs/visa.jpg">
+                <img class="mcImg" src="imgs/mastercard.png">
+                <img class="amEx" src="imgs/american-express.jpg">
+                <img class="discover" src="imgs/discover.png">
+                <from class="form2">
+                    <input class="credit1" type="radio" name="name" value="Credit">
+                    <label for="credit">Credit</label>
+                    <input class="debit1" type="radio" name="name" value="Debit">
+                    <label for="debit">Debit</label>
+                </from>
+                <div class="number1">
+                    <p class="numberTitle">Your card number:</p>
+                    <input class="numberBar" type="text" name="name">
+                </div>
+                <div class="expiration1">
+                    <p class="expTitle">Expiration Date:</p>
+                    <input class="expBar" type="month" name="name" value="ExpDate">
+                </div>
+                <div class="securityCode">
+                    <p class="secuTitle">Security code:</p>
+                    <input class="secu" type="number" name="name" value="SecuCode" min="1" max="999">
+                </div>
+                <button class="button2" onclick="myFunction2()">Pay Now</button>
+                <p class="java2" id="demo"></p>
+            </div>
+        </section>
+        <section class="section2">
+            <h3 class="payTip">Tip (Optional)</h3>
+            <p class="tipInfo">This section are for customers who are only paying with CARD.<br> If you want to tip with cash, you need to come to our resturant first.</p>
+            <div class="tipFormat">
+                <p class="tipTitle">Select the amount of money you want to give:</p>
+                <select class="tipAmount">
+                    <option value="Tip Amount" selected>Select here</option>
+                    <option value="$1.00">$1.00</option>
+                    <option value="$2.00">$2.00</option>
+                    <option value="$3.00">$3.00</option>
+                    <option value="$4.00">$4.00</option>
+                    <option value="$5.00">$5.00</option>
+                    <option value="$7.50">$7.50</option>
+                    <option value="$10.00">$10.00</option>
+                </select>
+            </div>
+        </section>
+    </body>
+    <script src="payment.js"></script>
+</html>

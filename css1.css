@@ -1,0 +1,239 @@
+*{
+    font-family: 'Belleza', sans-serif;
+}
+
+/*for the main page*/
+.login-sign{
+    border-radius: 15;
+    text-align: right;
+}
+
+.login-sign a:link{
+    color:blue;
+    text-decoration: none;
+}
+
+.login-sign a:hover{
+    color:red;
+}
+
+.login-sign a:visited{
+    color:lightseagreen;
+}
+
+.center-text{
+    background-color: chartreuse;
+    text-align: center;
+    border-radius: 15px;
+    width:100%;
+}
+
+.centerbutton{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.buybutton{
+    font-size: large;
+    text-align: center;
+}
+
+    a:link,
+a:visited {
+	color: #e67e22;
+	text-decoration: none;
+	padding-bottom: 1px;
+	transition: border-bottom 0.2s, color 0.2s
+}
+
+a:hover,
+a:active {
+	color: #555;
+	border-bottom: 1px solid transparent;
+}
+
+/*for the login and sign-up pages*/
+form {
+    border-radius: 15px;
+    border: 3px solid black;
+    background-color: rgb(47, 116, 243);
+  }
+  
+.avatar{
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #fffb00;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+ 
+  button:hover {
+    opacity: 0.8;
+  }
+  
+
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: rgb(0, 255, 85);
+  }
+  
+
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+ 
+  img.avatar {
+    width: 40%;
+    border-radius: 10%;
+  }
+  
+
+  .container {
+    padding: 16px;
+  }
+  
+ 
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+
+/*for the sign-in/log-in preludes*/
+  .choice1{
+      text-align: center;
+  }
+
+/*for the dashboard*/
+.choice1{
+  align-content: center;
+}
+
+/*for the ex wife's pastrami shop*/
+.body{
+
+background-size: cover;
+height: 100vh;
+}
+
+.foodtable{
+  align-items: center;
+  position: relative;
+  top: 545px;
+  display: inline-flex;
+  left: 400px;
+  border:3px solid #ffff;
+}
+
+.meattable{
+  border: 3px solid white;
+}
+
+.meattable th, p{
+  color: #ffff;
+  text-align: center;
+}
+
+.cheesetable{
+  border: 3px solid white;
+}
+
+.cheesetable th, p{
+  color: #ffff;
+}
+
+.winetable th, p{
+  color: #ffff;
+}
+
+.winetable{
+  border: 3px solid white;
+}
+
+/*for the potion pot*/
+.body1{
+
+background-size: cover;
+height: 100vh;
+}
+
+/*for soup*/
+.body2{
+
+  background-size: 37%;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.soupSection{
+  border: 3px solid black;
+  color: white;
+  width: 400px;
+  position: relative;
+  top: 50px;
+  left: 900px;
+  font-weight: bold;
+  background-color: black;
+}
+
+.tableSoup{
+  font-size: 35px;
+}
+
+.soup1{
+  position: absolute;
+  width: 15%;
+  bottom: 280px;
+  left: 50px;
+}
+
+.soup2{
+  position: absolute;
+  width: 15%;
+  bottom: 500px;
+  left: 500px;
+}
+
+.paraSoup1{
+  font-size: 30px;
+  color: black;
+  font-weight: 700;
+  margin: -14% 78% 0% 0%;
+}
+
+.paraSoup2{
+  font-size: 30px;
+  color: black;
+  font-weight: 700;
+  margin: -17% 15% 0% 0%;
+}

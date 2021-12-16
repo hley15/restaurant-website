@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Manager Page</title>
+        <link rel="stylesheet" href="managerpage.css">
+    </head>
+    <body class="mainBody">
+        <section class="section1">
+            <h1 class="mainTitle">Gate Strider(Admin page)</h1>
+        </section>
+        <section class="section2">
+            <div class="wholeInsruction">
+                <h2 class=inscTitle>Insructions:</h2>
+                <p><strong>Add Items -</strong> search an item that you wish to be added to the menu, then click on the add button.</p><br>
+                <p><strong>Delete Items -</strong> the "x" button next to an item will hide it once you click on it.</p>
+            </div>
+            <div class="dinnerList">
+                <h2 class="entree">Entree Menu</h2>
+                <ul class="itemlist" id="myUL">
+                    <li>Chicken Salad</li>
+                    <li>Turkey, Provolone</li>
+                    <li>Hamburger</li>
+                    <li>Rice and Lalo</li>
+                    <li>Griot</li>
+                    <li>Chicken Stew</li>
+                    <li>Plaintain and Eggs</li>
+                    <li>Pizza</li>
+                    <li>Spaghetti</li>
+                </ul>
+            </div>
+            <div class="desertList">
+                <h2 class="desert">Desert Menu</h2>
+                <ul class="itemlist2" id="myUL2">
+                    <li>Blimpie Brownie</li>
+                    <li>Cake</li>
+                </ul>
+            </div>
+        </section>
+        <section class="section3">
+            <div id="myDIV" class="searchBar">
+                <h2 class="addTitle">Add Items(Max: 9)</h2>
+                <input type="text" id="myInput" placeholder="Item...">
+                <span onclick="newElement()" class="addBtn">Add</span>
+            </div>
+            <div id="myDIV" class="searchBar2">
+                <h2 class="addTitle">Add Items(Max: 9)</h2>
+                <input type="text" id="myInput" placeholder="Item...">
+                <span onclick="newElement()" class="addBtn">Add</span>
+            </div>
+        </section>
+    </body>
+    <script>
+        var myNodelist = document.getElementsByTagName("LI");
+        var i;
+        for (i = 0; i < myNodelist.length; i++) {
+        var span = document.createElement("SPAN");
+        var txt = document.createTextNode("\u00D7");
+        span.className = "close";
+        span.appendChild(txt);
+        myNodelist[i].appendChild(span);
+        }
+
+        var close = document.getElementsByClassName("close");
+        var i;
+        for (i = 0; i < close.length; i++) {
+            close[i].onclick = function() {
+                var div = this.parentElement;
+                div.style.display = "none";
+            }
+        }
+
+        var list = document.querySelector('ul');
+        list.addEventListener('click', function(ev) {
+            if (ev.target.tagName === 'LI') {
+                ev.target.classList.toggle('checked');
+            }
+        }, false);
+
+        function newElement() {
+            var li = document.createElement("li");
+            var inputValue = document.getElementById("myInput").value;
+            var t = document.createTextNode(inputValue);
+            li.appendChild(t);
+            if (inputValue === '') {
+                alert("Please write an item down");
+            } else {
+                document.getElementById("myUL").appendChild(li);
+            }
+            document.getElementById("myInput").value = "";
+
+            var span = document.createElement("SPAN");
+            var txt = document.createTextNode("\u00D7");
+            span.className = "close";
+            span.appendChild(txt);
+            li.appendChild(span);
+
+            for (i = 0; i < close.length; i++) {
+                close[i].onclick = function() {
+                var div = this.parentElement;
+                div.style.display = "none";
+                }
+            }
+        }
+
+        function newElement() {
+            var li = document.createElement("li");
+            var inputValue = document.getElementById("myInput").value;
+            var t = document.createTextNode(inputValue);
+            li.appendChild(t);
+            if (inputValue === '') {
+                alert("Please write an item down");
+            } else {
+                document.getElementById("myUL").appendChild(li);
+            }
+            document.getElementById("myInput").value = "";
+
+            var span = document.createElement("SPAN");
+            var txt = document.createTextNode("\u00D7");
+            span.className = "close";
+            span.appendChild(txt);
+            li.appendChild(span);
+
+            for (i = 0; i < close.length; i++) {
+                close[i].onclick = function() {
+                var div = this.parentElement;
+                div.style.display = "none";
+                }
+            }
+        }
+    </script>
+</html>
